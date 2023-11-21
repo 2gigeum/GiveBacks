@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" th:href="@{/signup.css}"/>
+  <title>회원가입 - GiveBacks</title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">GiveBacks</div>
+    <ul>
+      <li><a href="#">홈</a></li>
+      <li><a href="#">자원봉사 찾기</a></li>
+      <li><a href="#">봉사자 등록</a></li>
+      <li><a href="#">로그인</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="signup-form">
+  <h1>회원가입</h1>
+  <form method="post">
+    <div>
+      <input type="email" name="userEmail" id="userEmail" placeholder="이메일 입력" required>
+    </div>
+    <div>
+      <input type="password" name="userPassword" placeholder="비밀번호 입력" required>
+    </div>
+    <div>
+      <input type="text" name="userName" placeholder="이름 입력" required>
+    </div>
+    <div>
+      <input type="text" name="userNickname" id="userNickname" placeholder="닉네임 입력" required>
+    </div>
+    <div>
+      <button id="signup-button">회원가입</button>
+    </div>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2023 GiveBacks. 모든 권리 보유.</p>
+</footer>
+</body>
+</html>
