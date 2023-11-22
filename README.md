@@ -7,16 +7,16 @@ GiveBacks는 지역사회의 자원봉사를 촉진하고 봉사자들과 기관
 
 ## 사용 기술
 
-Back-End : JAVA 11 , Spring Boot , JPA
+##### Back-End : JAVA 11 , Spring Boot , JPA
 
-Front-End : Html , CSS , JavaScript 
+##### Front-End : Html , CSS , JavaScript 
 
-Template Engine : Thymeleaf  
+##### Template Engine : Thymeleaf  
 
-DataBase :  MySQL , Redis  
+##### DataBase :  MySQL , Redis  
 
 ## 회원 관리
-### 회원가입
+#### 회원가입
 - [x] 회원가입 이메일 인증 (이메일 보내기)
 - [x] 랜덤 문자열 6자리 이메일 토큰 생성 
 - [x] 이메일로 발신된 이메일 토큰 Redis에 저장 (유효시간 1분)
@@ -25,7 +25,7 @@ DataBase :  MySQL , Redis
 - [x] 이메일 인증전 회원가입시 클릭시 이메일 인증을 먼저 완료하라는 메세지 출력
 
       
-### 로그인/ 로그아웃
+#### 로그인/ 로그아웃
 - [x] 로그인시 사용자의 이메일의 세션을 저장.
 - [x] 로그인후 세션값에 따라 메인페이지의 상단바 회원가입, 로그인 제거후 본인의 회원정보 출력
 - [x] 로그아웃시 세션 초기화
@@ -33,6 +33,12 @@ DataBase :  MySQL , Redis
 
 
 
-## 동작하는 사이트 이미지
+### 동작하는 사이트 이미지
+<img width="1280" alt="인덱스페이지" src="https://github.com/2gigeum/GiveBacks/assets/108059400/f16fc6af-1873-417c-8c04-8e37d7530f0a">
+<img width="1259" alt="회원가입 페이지png" src="https://github.com/2gigeum/GiveBacks/assets/108059400/3479a2a9-65c2-4800-b052-8b7d95ad1e21">
+<img width="1277" alt="로그인페이지" src="https://github.com/2gigeum/GiveBacks/assets/108059400/076a59c2-e263-42bb-bbb4-c64c2665251b">
+<img width="1279" alt="로그인 후 메인페이지" src="https://github.com/2gigeum/GiveBacks/assets/108059400/23d3d087-fe88-4d51-bdc6-32bfe749bb49">
+
+
 
 
