@@ -7,10 +7,10 @@ GiveBacks는 지역사회의 자원봉사를 촉진하고 봉사자들과 기관
 
 ## 사용 기술
 
-Back-End : JAVA 11 , Spring Boot , JPA
-Front-End : Html , CSS , JavaScript
-Template Engine : Thymeleaf
-DataBase :  MySQL , Redis
+Back-End : JAVA 11 , Spring Boot , JPA  
+Front-End : Html , CSS , JavaScript  
+Template Engine : Thymeleaf  
+DataBase :  MySQL , Redis  
 
 ## 회원 관리
 ### 회원가입
