@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" th:href="@{/signup.css}"/>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/signup.css}"/>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+  <script type="text/javascript" th:src="@{/js/signup.js}"></script>
+
   <title>회원가입 - GiveBacks</title>
 </head>
 <body>
@@ -11,31 +14,37 @@
   <nav>
     <div class="logo">GiveBacks</div>
     <ul>
-      <li><a href="#">홈</a></li>
+      <li><a href="/">홈</a></li>
       <li><a href="#">자원봉사 찾기</a></li>
       <li><a href="#">봉사자 등록</a></li>
-      <li><a href="#">로그인</a></li>
+      <li><a href="/user/signin">로그인</a></li>
     </ul>
   </nav>
 </header>
 
 <section class="signup-form">
   <h1>회원가입</h1>
-  <form method="post">
+  <form>
     <div>
       <input type="email" name="userEmail" id="userEmail" placeholder="이메일 입력" required>
+      <button id="sendEmail-button" >이메일 인증</button>
+      <div id="error-message"></div>
+    </div>
+    <div id="verification-section">
+      <input type="text" id="verificationCode" placeholder="인증코드 입력" required>
+      <button id="verify-button" >인증 코드 확인</button>
     </div>
     <div>
-      <input type="password" name="userPassword" placeholder="비밀번호 입력" required>
+      <input type="password" id="userPassword" name="userPassword" placeholder="비밀번호 입력" required>
     </div>
     <div>
-      <input type="text" name="userName" placeholder="이름 입력" required>
+      <input type="text" id="userName" name="userName" placeholder="이름 입력" required>
     </div>
     <div>
-      <input type="text" name="userNickname" id="userNickname" placeholder="닉네임 입력" required>
+      <input type="text" id="userNickname" name="userNickname"  placeholder="닉네임 입력" required>
     </div>
     <div>
-      <button id="signup-button">회원가입</button>
+      <button id="signup-button" >회원가입</button>
     </div>
   </form>
 </section>

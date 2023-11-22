@@ -54,3 +54,21 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+#verification-section {
+    display: none; /* 처음에 숨깁니다. */
+}
+
+#verificationCode {
+    border: 1px solid #ccc; /* 인증 코드 입력 칸에 테두리를 추가합니다. */
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#verify-button {
+    background-color: #007bff; /* 버튼 배경색을 변경합니다. */
+    color: #fff; /* 버튼 텍스트 색상을 변경합니다. */
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}

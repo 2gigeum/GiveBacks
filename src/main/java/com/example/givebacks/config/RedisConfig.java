@@ -1,4 +1,4 @@
-package com.example.givebacks;
+package com.example.givebacks.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
