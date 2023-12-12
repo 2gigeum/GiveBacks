@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/volunteer-search.css}"/>
+  <title>자원봉사 글 목록</title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">GiveBacks</div>
+    <ul>
+      <li><a href="/">홈</a></li>
+      <li><a href="../post/volunteer-search">자원봉사 찾기</a></li>
+      <li><a href="../post/volunteer-register">자원봉사 등록</a></li>
+      <!-- Thymeleaf로 세션에 저장된 사용자 정보 출력 -->
+      <li th:if="${session.loginUserEmail}">
+        <a th:href="@{/user/logout}">로그아웃</a>
+        <span th:text="${session.loginUserEmail}"></span>님 안녕하세요!
+      </li>
+      <li th:unless="${session.loginUserEmail}"><a href="../user/signin">로그인</a></li>
+      <li th:unless="${session.loginUserEmail}"><a href="../user/signup">회원가입</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="post-list">
+  <h2>자원봉사 글 목록</h2>
+
+  <div th:each="post : ${postList}">
+    <h3 th:text="${post.title}"></h3>
+     <p>작성일: <span th:text="${post.registerDt}"></span></p>
+
+    <a th:href="@{/post/{postId}(postId=${post.postId})}">자세히 보기</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2023 GiveBacks. 모든 권리 보유.</p>
+</footer>
+</body>
+</html>

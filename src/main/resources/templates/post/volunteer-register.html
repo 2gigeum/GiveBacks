@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/volunteer-register.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+    <script type="text/javascript" th:src="@{/js/volunteer-register.js}"></script>
+    <title>자원봉사 찾기</title>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">GiveBacks</div>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="../post/volunteer-search">자원봉사 찾기</a></li>
+            <li><a href="../post/volunteer-register">자원봉사 등록</a></li>
+            <!-- Thymeleaf로 세션에 저장된 사용자 정보 출력 -->
+            <li th:if="${session.loginUserEmail}">
+                <a th:href="@{/user/logout}">로그아웃</a>
+                <span th:text="${session.loginUserEmail}"></span>님 안녕하세요!
+            </li>
+            <li th:unless="${session.loginUserEmail}"><a href="../user/signin">로그인</a></li>
+            <li th:unless="${session.loginUserEmail}"><a href="../user/signup">회원가입</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="post-write">
+    <form method="post">
+    <div><h2>자원봉사 등록하기</h2></div>
+    <div>
+        <input type="text" name = "postTitle" id="postTitle" placeholder="제목을 입력하세요.">
+    </div>
+    <div>
+        <input type="text" name="postContent" id="postContent" placeholder="본문을 입력하세요">
+    </div>
+    <div>
+        <button id="write-button">글 작성</button>
+    </div>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2023 GiveBacks. 모든 권리 보유.</p>
+</footer>
+</body>
+</html>

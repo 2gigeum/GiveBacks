@@ -12,8 +12,8 @@
         <div class="logo">GiveBacks</div>
         <ul>
             <li><a href="#">홈</a></li>
-            <li><a href="#">자원봉사 찾기</a></li>
-            <li><a href="#">봉사자 등록</a></li>
+            <li><a href="/post/volunteer-search">자원봉사 찾기</a></li>
+            <li><a href="/post/volunteer-register">자원봉사 등록</a></li>
             <!-- Thymeleaf로 세션에 저장된 사용자 정보 출력 -->
             <li th:if="${session.loginUserEmail}">
                 <a th:href="@{/user/logout}">로그아웃</a>

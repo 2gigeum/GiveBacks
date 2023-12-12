@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+  <title>자원봉사 상세 정보</title>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="logo">GiveBacks</div>
+    <ul>
+      <li><a href="#">홈</a></li>
+      <li><a href="/post/volunteer-search">자원봉사 찾기</a></li>
+      <li><a href="/post/volunteer-register">자원봉사 등록</a></li>
+      <!-- Thymeleaf로 세션에 저장된 사용자 정보 출력 -->
+      <li th:if="${session.loginUserEmail}">
+        <a th:href="@{/user/logout}">로그아웃</a>
+        <span th:text="${session.loginUserEmail}"></span>님 안녕하세요!
+      </li>
+      <li th:unless="${session.loginUserEmail}"><a href="user/signin">로그인</a></li>
+      <li th:unless="${session.loginUserEmail}"><a href="user/signup">회원가입</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="post-detail">
+  <h2 th:text="${post.title}"></h2>
+  <p>작성자: <span th:text="${post.author}"></span></p>
+  <p>작성일: <span th:text="${post.createdDate}"></span></p>
+  <p th:text="${post.content}"></p>
+</section>
+
+<footer>
+  <p>&copy; 2023 GiveBacks. 모든 권리 보유.</p>
+</footer>
+</body>
+</html>

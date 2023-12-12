@@ -23,4 +23,15 @@ public class MainController {
         return "user/signin";
     }
 
+    /*
+    @GetMapping("/post/volunteer-search")
+    public String volunteerSearch() {
+        return "post/volunteer-search";
+    }
+     */
+    @GetMapping("/post/volunteer-register")
+    public String volunteerRegister() {
+        return "post/volunteer-register";
+    }
+
 }
