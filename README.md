@@ -46,6 +46,9 @@ GiveBacks는 지역사회의 자원봉사를 촉진하고 봉사자들과 기관
 <img width="1259" alt="회원가입 페이지png" src="https://github.com/2gigeum/GiveBacks/assets/108059400/3479a2a9-65c2-4800-b052-8b7d95ad1e21">
 <img width="1277" alt="로그인페이지" src="https://github.com/2gigeum/GiveBacks/assets/108059400/076a59c2-e263-42bb-bbb4-c64c2665251b">
 <img width="1279" alt="로그인 후 메인페이지" src="https://github.com/2gigeum/GiveBacks/assets/108059400/23d3d087-fe88-4d51-bdc6-32bfe749bb49">
+<img width="1280" alt="글작성 이미지" src="https://github.com/2gigeum/GiveBacks/assets/108059400/4d7a1c18-368f-41a3-b700-d5008b1efd01">
+<img width="1280" alt="게시판 글 목록 이미지" src="https://github.com/2gigeum/GiveBacks/assets/108059400/39fe5b3e-4d8d-4c8b-b9e7-70e1a61bfe1f">
+
 
 
 
